@@ -1,0 +1,15 @@
+type Query {
+    foods: [Food]
+    foodById(id: ID): Food
+}
+
+type Food {
+    id: ID
+    name: String
+    macro: Macro
+}
+
+type Macro {
+    id: ID
+    foodId: ID
+}
